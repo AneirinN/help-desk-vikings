@@ -157,7 +157,7 @@ gulp.task('serve', ['styles'], function () {
     //       will present a certificate warning in the browser.
     // https: true,
     server: ['.tmp', 'app']
-	port: process.env.PORT || 5000, // localhost:5000
+	//port: process.env.PORT || 5000, // localhost:5000
   });
 
   gulp.watch(['app/**/*.html'], reload);
