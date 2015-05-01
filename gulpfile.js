@@ -28,6 +28,11 @@ var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
 
+//[added]
+var push = require('git-push');
+var argv = require('minimist')(process.argv.slice(2));
+
+
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
   'ie_mob >= 10',
@@ -152,12 +157,21 @@ gulp.task('serve', ['styles'], function () {
     //       will present a certificate warning in the browser.
     // https: true,
     server: ['.tmp', 'app']
+	port: process.env.PORT || 5000, // localhost:5000
   });
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['jshint']);
   gulp.watch(['app/images/**/*'], reload);
+});
+
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [your_project_path],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
 });
 
 // Build and serve the output from the dist build
