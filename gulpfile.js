@@ -205,3 +205,18 @@ gulp.task('pagespeed', function (cb) {
 
 // Load custom tasks from the `tasks` directory
 // try { require('require-dir')('tasks'); } catch (err) { console.error(err); }
+
+
+gulp.task('heroku', ['default']);
+
+
+var express = require('express');
+var app = express();
+
+app.use(express.static(__dirname + "/dist"));
+
+var port = process.env.PORT || 3000;
+app.listen(port);
+
+
+
