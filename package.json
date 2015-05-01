@@ -2,8 +2,8 @@
 
 "scripts": {
   "build": "gulp",
-  "start": "node app"
-  "start": "node server.js", // or whatever your application is named
+  "start": "node app",
+  "start": "node server.js" // or whatever your application is named
 },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
