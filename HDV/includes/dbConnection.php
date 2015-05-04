@@ -2,7 +2,8 @@
 
 
 function getConnection(){
-    $host = "http://162.243.149.51/";
+    //$host = "http://162.243.149.51/";
+    $host = "localhost";
     $dbname = "attgolf";
     $username = "dbuser";
     $password = "csumb-hdv";
