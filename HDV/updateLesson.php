@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../../dbConnection.php';
+require 'includes/dbConnection.php';
 $dbConn = getConnection();
 
 if (!isset($_SESSION['username'])){
