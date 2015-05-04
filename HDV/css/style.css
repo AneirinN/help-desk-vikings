@@ -256,3 +256,46 @@ input:required:valid {
     background-position: right top;
     background-repeat: no-repeat;
 }
+
+
+
+#wrapper {
+    width: 600px;
+    text-align: center;
+    margin: 0px auto;
+    background: ivory;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+
+form {
+    text-align: right;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    text-align: center;
+}
+
+table {
+    margin-left: 20%;
+    width: 60%;
+    border: 1px solid whitesmoke;
+    border-collapse: collapse;
+    background-color: whitesmoke;
+    text-align: right;
+    border-radius: 5px;
+}
+
+#error{
+    color: red;
+    text-align: center;
+}
+
+
+
+
+
