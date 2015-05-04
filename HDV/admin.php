@@ -13,6 +13,25 @@ function getLessons(){
     return $stmt->fetchAll();
 }
 
+function getReports()
+{
+    global $dbConn;
+    
+    $sql = "SELECT * FROM Lesson ORDER BY lessonId";
+    $stmt = $dbConn -> prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchAll();
+    
+    
+    /*
+    total number
+    schools
+    list by skill
+    average age
+    
+    */
+}
+
 if (!isset($_SESSION['username'])) {   //checks whether the user has logged in
     header("Location: login.html");
 }
@@ -22,11 +41,13 @@ if (!isset($_SESSION['username'])) {   //checks whether the user has logged in
 if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "Delete" button
 
     echo " Deleting record...";
-    $sql = "DELETE FROM soc_college
-             WHERE collegeId = :collegeId";
+    $sql = "DELETE FROM Lessons
+             WHERE lessonId = :lessonId";
     $namedParameters = array();
-    $namedParameters[':collegeId'] = $_GET['collegeId'];
+    $namedParameters[':lessonId'] = $_GET['lessonId'];
     $stmt = $dbConn -> prepare($sql);
+    
+    //commented out to prevent unwanted deleting in testing
     //$stmt->execute($namedParameters);
 
 }
@@ -46,10 +67,10 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
 
     <!-- don't need to declare language, default is javascript -->
     <script>
-        function confirmDelete(collegeName){
+        function confirmDelete(lessonId){
             //alert("hi"); //testing purposes
 
-            var deleteRecord = confirm("Do you want to delete " + collegeName + "?");
+            var deleteRecord = confirm("Do you want to delete Lesson " + lessonId + "?");
             if (!deleteRecord){
                 return false;
             } else {
@@ -79,7 +100,7 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
         <input type="submit" value="Logout!" name="logout">
     </form>
 
-    <h2>Update/Delete Colleges:</h2>
+    <h2>Update/Delete Lessons:</h2>
 
 
 
@@ -87,19 +108,19 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
 
         <?php
 
-        $colleges = getColleges();
-        foreach ($colleges as $college) {
+        $lessons = getLessons();
+        foreach ($lessons as $lesson) {
             echo "<tr>";
-            echo "<td>" . $college['collegeName'] . "</td>";
+            echo "<td>Lesson " . $lesson['lessonId'] . "</td>";
             ?>  <td>
-		         <form action="updateCollege.php">
-		             <input type="hidden" name="collegeId" value="<?=$college['collegeId']?>" />
+		         <form action="updateLesson.php">
+		             <input type="hidden" name="lessonId" value="<?=$lesson['lessonId']?>" />
 		             <input type="submit" value="Update" name="updateForm"/>
 		         </form>
 		    </td>
 		    <td>
-		         <form onsubmit="return confirmDelete('<?=$college['collegeName']?>')">
-		             <input type="hidden" name="collegeId" value="<?=$college['collegeId']?>" />
+		         <form onsubmit="return confirmDelete('<?=$lesson['lessonId']?>')">
+		             <input type="hidden" name="lessonId" value="<?=$lesson['lessonId']?>" />
 		             <input type="submit" value="Delete" name="deleteForm"/>
 		         </form>
 		    </td>
