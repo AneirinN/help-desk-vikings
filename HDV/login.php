@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['loginForm'])) {
-    require 'dbConnection.php';
+    require 'includes/dbConnection.php';
     
     $dbConn = getConnection();
 
