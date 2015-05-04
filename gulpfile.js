@@ -28,6 +28,11 @@ var browserSync = require('browser-sync');
 var pagespeed = require('psi');
 var reload = browserSync.reload;
 
+//[added]
+var push = require('git-push');
+var argv = require('minimist')(process.argv.slice(2));
+
+
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
   'ie_mob >= 10',
@@ -152,12 +157,21 @@ gulp.task('serve', ['styles'], function () {
     //       will present a certificate warning in the browser.
     // https: true,
     server: ['.tmp', 'app']
+	//port: process.env.PORT || 5000, // localhost:5000
   });
 
   gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['jshint']);
   gulp.watch(['app/images/**/*'], reload);
+});
+
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [your_project_path],
+    port: process.env.PORT || 5005, // localhost:5005
+    livereload: false
+  });
 });
 
 // Build and serve the output from the dist build
@@ -191,3 +205,18 @@ gulp.task('pagespeed', function (cb) {
 
 // Load custom tasks from the `tasks` directory
 // try { require('require-dir')('tasks'); } catch (err) { console.error(err); }
+
+
+gulp.task('heroku', ['default']);
+
+
+var express = require('express');
+var app = express();
+
+app.use(express.static(__dirname + "/dist"));
+
+var port = process.env.PORT || 3000;
+app.listen(port);
+
+
+
