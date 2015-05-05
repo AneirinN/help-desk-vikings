@@ -167,6 +167,32 @@
                 <!-- page validation -->
                 <script>
                 <!--
+		function checkLesson()
+                    {
+                        $query = " SELECT date, location FROM Lesson WHERE lessonID = field_20"; 
+                        $result = mysql_query($query); 
+                        $.ajax({
+                            type: "get",
+                            url: "./checklesson.php",
+                            dataType: "json",
+                            data: {"studentCount": $("#field_20").val() },
+                            success: function(data,status) {
+                            // alert(data['exists']);
+                            if (studentCount < 5) {
+                                $("#checkVacancy").html("Lesson Slot Available");
+                                $("#checkVacancy").css("color", "green")
+                            } else {
+                                $("#checkVacancy").html("Lesson Full");
+                                $("#field_20").css("background-color", "red");
+                                $("#field_20").focus();
+                                $("#checkVacancy").css("color", "red");
+                            }
+                        },
+                            complete: function(data,status) { //optional, used for debugging purposes
+                            // alert(status);
+                        }
+                    });
+                    }
                     function validatePage1() {
                         var retVal = true;
 
