@@ -21,9 +21,9 @@ To change this template use Tools | Templates.
         <link rel="shortcut icon" href="img/logo.png" />
 
         <!-- Bootstrap core CSS -->
-        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-        <link href="css/styles.css" rel="stylesheet" />
+        <!--        <link href="css/styles.css" rel="stylesheet" />-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -38,11 +38,17 @@ To change this template use Tools | Templates.
             <img src="img/logo.png" class="img-responsive" alt="Logo">
 
             <h2 class="form-signin-heading">Click here to sign up: </h2>
-            <form action="signup.php" method="post" class="form-signin">
-                 <input type="submit" name="loginForm" value="Sign Up" />
+            <form action="queryLesson.php" method="post" class="form-signin">
+                <!--  <input type="submit" name="queryLesson" value="Sign Up" />-->
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="queryLesson">Login</button>
             </form>
 
-            <h1 class="form-signin-heading">OR</h1>
+            <form action="signup.php" method="post" class="form-signin">
+                <!--  <input type="submit" name="loginForm" value="Sign Up" />-->
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="signup">Login</button>
+            </form>
+
+            <h3> class="form-signin-heading">OR</h3>
 
             <h1 class="form-signin-heading">Administrator Sign In:</h1>
 
@@ -53,8 +59,8 @@ To change this template use Tools | Templates.
                 <label for="inputPassword" class="sr-only">Password</label>
                 <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
 
-                <input type="submit" name="loginForm" value="Login!" />
-
+                <!-- <input type="submit" name="loginForm" value="Login!" />-->
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="loginForm">Login</button>
                 <!--
                 <div class="checkbox">
                     <label>
@@ -62,7 +68,7 @@ To change this template use Tools | Templates.
                     </label>
                 </div>
                 -->
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
 
             </form>
 
@@ -81,8 +87,9 @@ To change this template use Tools | Templates.
 
         </div> <!-- /container -->
 
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
         <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+         -->
 
     </body>
 </html>
