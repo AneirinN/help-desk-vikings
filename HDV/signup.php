@@ -46,7 +46,7 @@
 
 
         <br/><!-- begin form -->
-        <form method=post enctype=multipart/form-data action=processor.php onSubmit="return validatePage2();">
+        <form method=post enctype=multipart/form-data action=submit.php onSubmit="return validatePage2();">
             <ul class=mainForm id="mainForm_1">
 
                 <li class="mainForm" id="fieldBox_1">
@@ -185,7 +185,7 @@
                             retVal=false;
                         if (validateField('field_6','fieldBox_6','text',1) == false)
                             retVal=false;
-                        if (validateDate('field_7','fieldBox_7','date',1,'05/03/2000','05/03/2015') == false)
+                        if (validateDate('field_7','fieldBox_7','date',1,'05/03/1960','05/03/2020') == false)
                             retVal=false;
                         if (validateField('field_8','fieldBox_8','text',1) == false)
                             retVal=false;
@@ -199,8 +199,8 @@
                             retVal=false;
                         if (validateField('field_13','fieldBox_13','text',1) == false)
                             retVal=false;
-                        if (validateField('field_14','fieldBox_14','text',1) == false)
-                            retVal=false;
+//                        if (validateField('field_14','fieldBox_14','text',1) == false)
+//                            retVal=false;
                         if (validateField('field_15','fieldBox_15','text',1) == false)
                             retVal=false;
                         if (validateField('field_16','fieldBox_16','menu',1) == false)
@@ -258,6 +258,7 @@
                 <!-- end page validaton -->
 
                 <!-- next page buttons -->
+<!--
                 <li class="mainForm">
                     <label class="formFieldQuestion">
                         Type the following:&nbsp;<a class=info href=#><img src=img/tip_small.png border=0>
@@ -267,7 +268,7 @@
 
                     <input id="captchaForm" name="security_code" class="mainForm" type="text"/>
                 </li>
-
+-->
                 <li class="mainForm">
                         <input id="saveForm" class="mainForm" type="submit" value="Submit" />
                 </li>
