@@ -24,7 +24,7 @@ To change this template use Tools | Templates.
         <!-- using theme over bootstrap.min.css-->
         <link href="bootstrap/css/bootstrap.flatly.css" rel="stylesheet">
 
-        <!--        <link href="css/style.css" rel="stylesheet" />-->
+        <link href="css/style.css" rel="stylesheet" />
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -35,8 +35,10 @@ To change this template use Tools | Templates.
     </head>
     <body>
         <div class="container-fluid">
-
+		
+		<figure>
             <img src="img/logo.png" class="img-responsive" alt="Logo">
+		</figure>
 
             <h2 class="form-signin-heading">Click here to sign up: </h2>
             <form action="queryLesson.php" method="post" class="form-signin">

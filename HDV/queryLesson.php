@@ -122,7 +122,7 @@ $location = $_POST['location'];
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.flatly.css" rel="stylesheet">
 
-    <!--        <link href="css/style.css" rel="stylesheet" />-->
+    <link href="css/style.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -144,7 +144,8 @@ $location = $_POST['location'];
 
     //try to print out table with firstname, lastname
     echo "<table style='border: solid 1px black;border-collapse:collapse;'>";
-    echo "<tr><th>Lesson #</th><th>Session #</th><th>Instructor</th><th><pre>           </pre></th>
+	// <pre> places a block, with bootstrap &#8196?
+    echo "<tr><th>Lesson #</th><th>Session #</th><th>Instructor</th><th>&#8196</th>
       <th>Location</th><th>Date</th><th>Students Enrolled</th></tr>";
 
     try {
