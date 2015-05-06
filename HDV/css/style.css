@@ -207,7 +207,7 @@ button.calendarStyle
 	border: 0;
 	height:22px;
 	width:22px;
-	background-image:url(../img/calendar.png);
+	background-image:url(img/calendar.png);
 	cursor: pointer;
 	cursor: hand;
 }
@@ -296,6 +296,9 @@ table {
 }
 
 
-
+img {
+    max-width: 50%;
+    height: auto;
+}
 
 

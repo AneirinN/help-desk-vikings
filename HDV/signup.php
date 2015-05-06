@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
@@ -16,11 +20,14 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
     <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/logo.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
 
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet" type="text/css">
+
     <!-- calendar stuff -->
     <link rel="stylesheet" type="text/css" href="calendar/calendar-blue2.css" />
     <script type="text/javascript" src="calendar/calendar.js"></script>
