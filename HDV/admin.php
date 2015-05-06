@@ -44,8 +44,8 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="admin page">
+    <meta name="author" content="Help-Desk-Vikings">
 
 
 
@@ -57,11 +57,11 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
     <link rel="shortcut icon" href="img/logo.png" />
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.flatly.css" rel="stylesheet">
 
 
 
-    <link href="css/styles.css" rel="stylesheet" />
+<!--    <link href="css/style.css" rel="stylesheet" />-->
 
     <!-- don't need to declare language, default is javascript -->
     <script>
@@ -75,7 +75,6 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
                 return true;
             }
         }
-
     </script>
 
 
@@ -84,7 +83,8 @@ if (isset ($_GET['deleteForm'])){  //checking whether we have clicked on the "De
 <body>
 
 
-<div id="wrapper">
+<div class="container-fluid">
+
     <h3><?echo "Welcome " . $_SESSION['adminName'];?></h3>
 
 

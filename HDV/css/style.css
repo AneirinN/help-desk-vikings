@@ -4,7 +4,7 @@ body
 {
 	text-align: center;
 	margin: 20px;		/* shift whole page down by 25 pixels */
-	background-color: #6B8E23;
+	background-color: #7CFC00;
 }
 
 
@@ -66,7 +66,7 @@ select.mainFormError
 {
 	position: relative;
 	width: 100%;
-	background-color: #7CFC00;
+	background-color: #6B8E23;
 	margin:0 0 0 0;
 	padding-bottom: 10px;
 }
@@ -302,3 +302,8 @@ img {
 }
 
 
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+}

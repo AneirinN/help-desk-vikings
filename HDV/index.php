@@ -8,8 +8,8 @@ To change this template use Tools | Templates.
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="spash page">
+        <meta name="author" content="Help-Desk-Vikings">
 
 
 
@@ -21,9 +21,10 @@ To change this template use Tools | Templates.
         <link rel="shortcut icon" href="img/logo.png" />
 
         <!-- Bootstrap core CSS -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- using theme over bootstrap.min.css-->
+        <link href="bootstrap/css/bootstrap.flatly.css" rel="stylesheet">
 
-        <!--        <link href="css/styles.css" rel="stylesheet" />-->
+        <!--        <link href="css/style.css" rel="stylesheet" />-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -33,24 +34,24 @@ To change this template use Tools | Templates.
 
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
 
             <img src="img/logo.png" class="img-responsive" alt="Logo">
 
             <h2 class="form-signin-heading">Click here to sign up: </h2>
             <form action="queryLesson.php" method="post" class="form-signin">
                 <!--  <input type="submit" name="queryLesson" value="Sign Up" />-->
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="queryLesson">Login</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="queryLesson">View Lessons</button>
             </form>
 
             <form action="signup.php" method="post" class="form-signin">
                 <!--  <input type="submit" name="loginForm" value="Sign Up" />-->
-                <button class="btn btn-lg btn-primary btn-block" type="submit" name="signup">Login</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit" name="signup">Sign Up</button>
             </form>
 
-            <h3> class="form-signin-heading">OR</h3>
+            <h3 class="form-signin-heading">OR</h3>
 
-            <h1 class="form-signin-heading">Administrator Sign In:</h1>
+            <h2 class="form-signin-heading">Administrator Sign In:</h2>
 
             <form action="login.php" method="post" class="form-signin">
                 <label for="inputUsername" class="sr-only">Username</label>
