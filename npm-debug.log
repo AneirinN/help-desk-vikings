@@ -1,0 +1,232 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap-package-manager',
+1 verbose cli   '-g' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'bootstrap-package-manager', null ]
+5 verbose cache add name=undefined spec="bootstrap-package-manager" args=["bootstrap-package-manager",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bootstrap-package-manager',
+6 verbose parsed url   path: 'bootstrap-package-manager',
+6 verbose parsed url   href: 'bootstrap-package-manager' }
+7 silly lockFile fff5e32a-bootstrap-package-manager bootstrap-package-manager
+8 verbose lock bootstrap-package-manager /home/admin/.npm/fff5e32a-bootstrap-package-manager.lock
+9 silly lockFile fff5e32a-bootstrap-package-manager bootstrap-package-manager
+10 silly lockFile fff5e32a-bootstrap-package-manager bootstrap-package-manager
+11 verbose addNamed [ 'bootstrap-package-manager', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile e7670915-bootstrap-package-manager bootstrap-package-manager@
+14 verbose lock bootstrap-package-manager@ /home/admin/.npm/e7670915-bootstrap-package-manager.lock
+15 silly addNameRange { name: 'bootstrap-package-manager', range: '*', hasData: false }
+16 verbose url raw bootstrap-package-manager
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bootstrap-package-manager' ]
+18 verbose url resolved https://registry.npmjs.org/bootstrap-package-manager
+19 info trying registry request attempt 1 at 04:06:15
+20 http GET https://registry.npmjs.org/bootstrap-package-manager
+21 http 200 https://registry.npmjs.org/bootstrap-package-manager
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+22 silly registry.get     etag: '"1TLNWQ44N3QKM0SWZFZJ5QYAD"',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'cache-control': 'max-age=60',
+22 silly registry.get     'content-length': '58225',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Wed, 06 May 2015 08:06:16 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-sjc3134-SJC',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1430899575.948859,VS0,VE209',
+22 silly registry.get     vary: 'Accept' } ]
+23 silly addNameRange number 2 { name: 'bootstrap-package-manager', range: '*', hasData: true }
+24 silly addNameRange versions [ 'bootstrap-package-manager',
+24 silly addNameRange   [ '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.1.2',
+24 silly addNameRange     '1.1.3',
+24 silly addNameRange     '1.1.4',
+24 silly addNameRange     '1.1.5',
+24 silly addNameRange     '1.1.6',
+24 silly addNameRange     '1.1.7',
+24 silly addNameRange     '1.1.8' ] ]
+25 verbose addNamed [ 'bootstrap-package-manager', '1.1.8' ]
+26 verbose addNamed [ '1.1.8', '1.1.8' ]
+27 silly lockFile 981f3159-bootstrap-package-manager-1-1-8 bootstrap-package-manager@1.1.8
+28 verbose lock bootstrap-package-manager@1.1.8 /home/admin/.npm/981f3159-bootstrap-package-manager-1-1-8.lock
+29 silly lockFile 29b9d3fb-tstrap-package-manager-1-1-8-tgz https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz
+30 verbose lock https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz /home/admin/.npm/29b9d3fb-tstrap-package-manager-1-1-8-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz',
+31 verbose addRemoteTarball   '46be8005d51253a3c5e2e0c524b0aeef5c01aad5' ]
+32 info retry fetch attempt 1 at 04:06:16
+33 verbose fetch to= /home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz
+34 http GET https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz
+35 http 200 https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz
+36 verbose tar unpack /home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz
+37 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+38 verbose lock tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package /home/admin/.npm/b4209e0b-76176-0-3477971798274666-package.lock
+39 silly lockFile 9b2558a9-76176-0-3477971798274666-tmp-tgz tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz
+40 verbose lock tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz /home/admin/.npm/9b2558a9-76176-0-3477971798274666-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry README.md
+44 silly gunzTarPerm extractEntry Cakefile
+45 silly gunzTarPerm extractEntry LICENSE.md
+46 silly gunzTarPerm extractEntry bin/bpm
+47 silly gunzTarPerm extractEntry lib/bootswatch.js
+48 silly gunzTarPerm extractEntry lib/font-awesome.js
+49 silly gunzTarPerm extractEntry lib/main.js
+50 silly gunzTarPerm extractEntry lib/utils.js
+51 silly gunzTarPerm extractEntry lib/variables.js
+52 silly gunzTarPerm extractEntry src/bin.coffee
+53 silly gunzTarPerm extractEntry src/bootswatch.coffee
+54 silly gunzTarPerm extractEntry src/font-awesome.coffee
+55 silly gunzTarPerm extractEntry src/main.coffee
+56 silly gunzTarPerm extractEntry src/utils.coffee
+57 silly gunzTarPerm extractEntry src/variables.coffee
+58 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+59 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+60 silly lockFile 9b2558a9-76176-0-3477971798274666-tmp-tgz tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz
+61 silly lockFile 9b2558a9-76176-0-3477971798274666-tmp-tgz tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/tmp.tgz
+62 verbose tar pack [ '/home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz',
+62 verbose tar pack   '/home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package' ]
+63 verbose tarball /home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+64 verbose folder /home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+65 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+66 verbose lock tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package /home/admin/.npm/b4209e0b-76176-0-3477971798274666-package.lock
+67 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+68 verbose lock tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz /home/admin/.npm/41072c81-ackage-manager-1-1-8-package-tgz.lock
+69 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+70 silly lockFile b4209e0b-76176-0-3477971798274666-package tar:///home/admin/tmp/npm-8638-iZPh2awa/1430899576176-0.3477971798274666/package
+71 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+72 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+73 silly lockFile f66fb558-ap-package-manager-1-1-8-package /home/admin/.npm/bootstrap-package-manager/1.1.8/package
+74 verbose lock /home/admin/.npm/bootstrap-package-manager/1.1.8/package /home/admin/.npm/f66fb558-ap-package-manager-1-1-8-package.lock
+75 silly lockFile f66fb558-ap-package-manager-1-1-8-package /home/admin/.npm/bootstrap-package-manager/1.1.8/package
+76 silly lockFile f66fb558-ap-package-manager-1-1-8-package /home/admin/.npm/bootstrap-package-manager/1.1.8/package
+77 verbose tar unpack /home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+78 silly lockFile 5006033a-ap-package-manager-1-1-8-package tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package
+79 verbose lock tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package /home/admin/.npm/5006033a-ap-package-manager-1-1-8-package.lock
+80 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+81 verbose lock tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz /home/admin/.npm/41072c81-ackage-manager-1-1-8-package-tgz.lock
+82 silly gunzTarPerm modes [ '755', '644' ]
+83 silly gunzTarPerm extractEntry package.json
+84 silly gunzTarPerm extractEntry README.md
+85 silly gunzTarPerm extractEntry Cakefile
+86 silly gunzTarPerm extractEntry LICENSE.md
+87 silly gunzTarPerm extractEntry bin/bpm
+88 silly gunzTarPerm extractEntry lib/bootswatch.js
+89 silly gunzTarPerm extractEntry lib/font-awesome.js
+90 silly gunzTarPerm extractEntry lib/main.js
+91 silly gunzTarPerm extractEntry lib/utils.js
+92 silly gunzTarPerm extractEntry lib/variables.js
+93 silly gunzTarPerm extractEntry src/bin.coffee
+94 silly gunzTarPerm extractEntry src/bootswatch.coffee
+95 silly gunzTarPerm extractEntry src/font-awesome.coffee
+96 silly gunzTarPerm extractEntry src/main.coffee
+97 silly gunzTarPerm extractEntry src/utils.coffee
+98 silly gunzTarPerm extractEntry src/variables.coffee
+99 silly lockFile 5006033a-ap-package-manager-1-1-8-package tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package
+100 silly lockFile 5006033a-ap-package-manager-1-1-8-package tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package
+101 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+102 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+103 verbose chmod /home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz 644
+104 verbose chown /home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz [ 1000, 1000 ]
+105 silly lockFile 29b9d3fb-tstrap-package-manager-1-1-8-tgz https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz
+106 silly lockFile 29b9d3fb-tstrap-package-manager-1-1-8-tgz https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz
+107 silly lockFile 981f3159-bootstrap-package-manager-1-1-8 bootstrap-package-manager@1.1.8
+108 silly lockFile 981f3159-bootstrap-package-manager-1-1-8 bootstrap-package-manager@1.1.8
+109 silly lockFile e7670915-bootstrap-package-manager bootstrap-package-manager@
+110 silly lockFile e7670915-bootstrap-package-manager bootstrap-package-manager@
+111 silly resolved [ { name: 'bootstrap-package-manager',
+111 silly resolved     preferGlobal: true,
+111 silly resolved     version: '1.1.8',
+111 silly resolved     author: { name: 'Tyler Johnson', email: 'tyler@vintyge.com' },
+111 silly resolved     description: 'A simple command line interface for installing and compiling Twitter Bootstrap.',
+111 silly resolved     homepage: 'https://github.com/appleifreak/bootstrap-package-manager',
+111 silly resolved     dependencies:
+111 silly resolved      { underscore: '1.4.4',
+111 silly resolved        async: '0.2.7',
+111 silly resolved        'fs-extra': '0.6.0',
+111 silly resolved        'tar.gz': '0.1.1',
+111 silly resolved        'uglify-js': '2.2.5',
+111 silly resolved        less: '1.3.3',
+111 silly resolved        progress: '0.1.0',
+111 silly resolved        commander: '1.1.1',
+111 silly resolved        request: '2.21.0',
+111 silly resolved        minimatch: '0.2.12' },
+111 silly resolved     devDependencies: { 'coffee-script': '1.6.2' },
+111 silly resolved     bin: { bpm: './bin/bpm' },
+111 silly resolved     main: './lib/main.js',
+111 silly resolved     engines: { node: '>=0.10' },
+111 silly resolved     repository:
+111 silly resolved      { type: 'git',
+111 silly resolved        url: 'https://github.com/appleifreak/bootstrap-package-manager.git' },
+111 silly resolved     keywords:
+111 silly resolved      [ 'bootstrap',
+111 silly resolved        'twitter',
+111 silly resolved        'install',
+111 silly resolved        'compile',
+111 silly resolved        'cli',
+111 silly resolved        'manager',
+111 silly resolved        'font-awesome' ],
+111 silly resolved     readme: '# Bootstrap Package Manager\n\nThis is a simple command line interface for installing and compiling Twitter Bootstrap written in Node.js. It has many options, but the default is to install everything, without compression. It also integrates with a few extra Bootstrap resources, including Font-Awesome and Bootswatch themes.\n\n## Install\n\n\tnpm install bootstrap-package-manager -g\n\n## Usage\n\n\tbpm [options] <folder>\n\nBoth `options` and `folder` are optional. `folder` is the path you want to dump the bootstrap files in and defaults to `./bootstrap`. If the directory already exists and isn\'t empty, bootstrap-package-manager will warn you. Here are available options:\n\n* `-h, --help` : output usage information\n* `-V, --version` : output the version number\n* `-j, --javascript` : Add Javascript\n* `-c, --css` : Add CSS\n* `-l, --less` : Add Less\n* `-i, --img` : Add Images\n* `-a, --font-awesome` : Add Font Awesome\n* `-t, --theme <name>` : Mixin in a Bootswatch theme. See <http://bootswatch.com/> for full list. Compatible with custom variables.less file.\n* `-v, --variables <path>` : Path to a custom `variables.less` file to replace the included version.\n* `-f, --font-path <path>` : Set a custom value for the less variable `@FontAwesomePath` for a custom css font path when using Font Awesome.\n* `-s, --script <paths>` : Include javascript files (seperated by commas) with custom runtime instructions. See `src/font-awesome.coffee` or `src/variables.coffee` for examples.\n* `-x, --compress` : Compress JS and CSS and include as an extra `*.min.*` file.\n* `--compress-js` : Compress JS with UglifyJs and include as  an extra `bootstrap.min.js` file.\n* `--compress-css` : Compress CSS with lessc (YUI) and include as an extra `*.min.css` file.\n* `--no-concat` : Don\'t concat Javascript files together.\n* `--bootstrap-version <version>` : Specific Bootstrap version to use. See <http://github.com/twitter/bootstrap/tags> for full list. Default: `master`; Example: `2.1.0` or `v2.1.0`\n\nThe default is to include all javascript, css, images and less unless you include at least one of the options `-j`, `-c`, `-l`, or `-i`, in which case only those specified are included.\n\nSometimes, bootstrap-package-manager likes to... fail. It is usually caused by a problem with http requests or file streams (ie. a package url is offline). If this happens, attempt a few reruns and then if the problem still occurs, submit an issue report.\n\n## Examples\n\n\t$ bpm\n\nCreates a new folder in the current working directory named "bootstrap" and dumps js, css, less and images into it.\n\n\t$ bpm -ax\n\nCreates a new folder in the current working directory named "bootstrap" and dumps js, css, less, images and font awesome into it. Then it compresses all of the css and js.\n\n\t$ bpm -jcix booten_gurt\n\nCreates a new folder in the current working directory named "booten_gurt" and dumps only js, css, and images into it. Then it compresses all of the css and js.\n\n\t$ bpm -x -v ./variables.less\n\nCreates a new folder in the current working directory named "bootstrap" and dumps js, css, images and less files into it. Then it replaces the existing variables.less file with the custom one and compresses all of the css and js.\n\n\t$ bpm --bootstrap-version 2.1.0\n\nCreates a new folder in the current working directory named "bootstrap", gets version 2.1.0 of bootstrap and dumps only js, css, less, and images into it.\n\n\t$ bpm -t Cosmo\n\nCreates a new folder in the current working directory named "bootstrap", finds and includes the Bootswatch theme `Cosmo` and then exports the js, css, less, and images.',
+111 silly resolved     readmeFilename: 'README.md',
+111 silly resolved     bugs: { url: 'https://github.com/appleifreak/bootstrap-package-manager/issues' },
+111 silly resolved     _id: 'bootstrap-package-manager@1.1.8',
+111 silly resolved     dist: { shasum: '52df86cbb525af65dddcd12e9ba707c96e62ae64' },
+111 silly resolved     _from: 'bootstrap-package-manager@',
+111 silly resolved     _resolved: 'https://registry.npmjs.org/bootstrap-package-manager/-/bootstrap-package-manager-1.1.8.tgz' } ]
+112 info install bootstrap-package-manager@1.1.8 into /home/admin/.npm-packages/lib
+113 info installOne bootstrap-package-manager@1.1.8
+114 info /home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager unbuild
+115 verbose tar unpack /home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+116 silly lockFile 5f728aa8-odules-bootstrap-package-manager tar:///home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager
+117 verbose lock tar:///home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager /home/admin/.npm/5f728aa8-odules-bootstrap-package-manager.lock
+118 silly lockFile 41072c81-ackage-manager-1-1-8-package-tgz tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz
+119 verbose lock tar:///home/admin/.npm/bootstrap-package-manager/1.1.8/package.tgz /home/admin/.npm/41072c81-ackage-manager-1-1-8-package-tgz.lock
+120 silly gunzTarPerm modes [ '755', '644' ]
+121 error Error: EACCES, mkdir '/home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager'
+121 error  { [Error: EACCES, mkdir '/home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager']
+121 error   errno: 3,
+121 error   code: 'EACCES',
+121 error   path: '/home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager',
+121 error   fstream_type: 'Directory',
+121 error   fstream_path: '/home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager',
+121 error   fstream_class: 'DirWriter',
+121 error   fstream_stack:
+121 error    [ '/usr/lib/nodejs/fstream/lib/dir-writer.js:36:23',
+121 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+121 error      'Object.oncomplete (fs.js:107:15)' ] }
+122 error Please try running this command again as root/Administrator.
+123 error System Linux 3.13.0-43-generic
+124 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "bootstrap-package-manager" "-g"
+125 error cwd /home/admin/help-desk-vikings
+126 error node -v v0.10.25
+127 error npm -v 1.3.10
+128 error path /home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager
+129 error fstream_path /home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager
+130 error fstream_type Directory
+131 error fstream_class DirWriter
+132 error code EACCES
+133 error errno 3
+134 error stack Error: EACCES, mkdir '/home/admin/.npm-packages/lib/node_modules/bootstrap-package-manager'
+135 error fstream_stack /usr/lib/nodejs/fstream/lib/dir-writer.js:36:23
+135 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+135 error fstream_stack Object.oncomplete (fs.js:107:15)
+136 verbose exit [ 3, true ]

@@ -1,13 +1,13 @@
 <?php
 session_start();  // Starts a new session or resumes an existing one
-require '../../dbConnection.php';
+require 'includes/dbConnection.php';
 $dbConn = getConnection();
 
 
-function getColleges(){
+function getLessons(){
     global $dbConn;
 
-    $sql = "SELECT collegeId, collegeName FROM soc_college ORDER BY collegeId";
+    $sql = "SELECT * FROM Lesson ORDER BY lessonId";
     $stmt = $dbConn -> prepare($sql);
     $stmt->execute();
     return $stmt->fetchAll();

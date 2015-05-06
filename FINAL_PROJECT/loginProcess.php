@@ -1,11 +1,10 @@
 <?php
 session_start();
 if (isset($_POST['loginForm'])) {
-    require 'includes/dbConnection.php';
+    require 'dbConnection.php';
     
     $dbConn = getConnection();
-
-
+    
     $sql ="SELECT * FROM Administrator WHERE username = :username AND password = :password";
     
     $namedParameters = array();
@@ -17,15 +16,12 @@ if (isset($_POST['loginForm'])) {
     $result = $stmt->fetch();
     
     if(empty($result)){
-        header("Location: index.php?error='WRONG USERNAME OR PASSWORD'");
-
+        header("Location: login.html?error='wrong username'");
     } else {
-
         $_SESSION['username'] = $result['username'];
-        $_SESSION['adminName'] = $result['firstName'] . " " . $result['lastName'];
-
         header("Location: admin.php");
     }
     
     
 }
+?>
